@@ -1,0 +1,79 @@
+﻿<Window x:Class="SEH_Test_Solution.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SEH_Test_Solution"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="622" Width="774">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".5*"/>
+            <RowDefinition Height=".5*"/>
+        </Grid.RowDefinitions>
+        <RichTextBox x:Name="TitleTextBox" Grid.Row="0" HorizontalAlignment="Left" Height="23" Margin="200,40,0,0" VerticalAlignment="Top" Width="350"/>
+        <RichTextBox x:Name="BodyTextBox" Grid.Row="0" HorizontalAlignment="Left" Height="125" Margin="200,100,0,0" VerticalAlignment="Top" Width="350"/>
+
+        <Label Grid.Row="0" Content="Title:" HorizontalAlignment="Left" Margin="200,9,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label Grid.Row="0" Content="Body:" HorizontalAlignment="Left" Margin="200,69,0,0" VerticalAlignment="Top" FontSize="15"/>
+
+        <Label Grid.Row="0" Content="Suggested Images:" HorizontalAlignment="Left" Margin="25,260,0,0" VerticalAlignment="Top" FontSize="15"/>
+
+        <Button Grid.Row="0" Content="Get Images" HorizontalAlignment="Left" Margin="400,265,0,0" VerticalAlignment="Top" Width="75" Click="RetrieveImages"/>
+        <Button Grid.Row="0" Content="Create Slide" HorizontalAlignment="Left" Margin="490,265,0,0" VerticalAlignment="Top" Width="110" Click="CopyToClipboard"/>
+        <Button Grid.Row="0" Content="Create Slide" HorizontalAlignment="Left" Margin="490,265,0,0" VerticalAlignment="Top" Width="110" Click="CreateSlide"/>
+        <Button Grid.Row="0" Content="Create Presentation" HorizontalAlignment="Left" Margin="615,265,0,0" VerticalAlignment="Top" Width="130" Click="FinishPresentation"/>
+
+        <Border Grid.Row="1" Height="Auto" Width="Auto" BorderBrush="Black" BorderThickness="3">
+            <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".5*"/>
+                    <RowDefinition Height=".5*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".333*"/>
+                    <ColumnDefinition Width=".334*"/>
+                    <ColumnDefinition Width=".333*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="0" Grid.Row="0" BorderBrush="Black" BorderThickness="1">
+                    <Grid Background="Black">
+                        <Image x:Name="Image1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MouseLeftButtonUp="ImageClicked"/>
+                        <CheckBox x:Name="CheckBox1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,5" Height="25" Width="25" BorderThickness="1"/>
+                    </Grid>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="0" BorderBrush="Black" BorderThickness="1">
+                    <Grid Background="Black">
+                        <Image x:Name="Image2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MouseLeftButtonUp="ImageClicked"/>
+                        <CheckBox x:Name="CheckBox2" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,5" Height="25" Width="25" BorderThickness="1"/>
+                    </Grid>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="0" BorderBrush="Black" BorderThickness="1">
+                    <Grid Background="Black">
+                        <Image x:Name="Image3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MouseLeftButtonUp="ImageClicked"/>
+                        <CheckBox x:Name="CheckBox3" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,5" Height="25" Width="25" BorderThickness="1"/>
+                    </Grid>
+                </Border>
+                <Border Grid.Column="0" Grid.Row="1" BorderBrush="Black" BorderThickness="1">
+                    <Grid Background="Black">
+                        <Image x:Name="Image4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MouseLeftButtonUp="ImageClicked"/>
+                        <CheckBox x:Name="CheckBox4" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,5" Height="25" Width="25" BorderThickness="1"/>
+                    </Grid>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="1" BorderBrush="Black" BorderThickness="1">
+                    <Grid Background="Black">
+                        <Image x:Name="Image5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MouseLeftButtonUp="ImageClicked"/>
+                        <CheckBox x:Name="CheckBox5" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,5" Height="25" Width="25" BorderThickness="1"/>
+                    </Grid>
+                </Border>
+                <Border Grid.Column="2" Grid.Row="1" BorderBrush="Black" BorderThickness="1">
+                    <Grid Background="Black">
+                        <Image x:Name="Image6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MouseLeftButtonUp="ImageClicked"/>
+                        <CheckBox x:Name="CheckBox6" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,5" Height="25" Width="25" BorderThickness="1"/>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
+
+    </Grid>
+</Window>
