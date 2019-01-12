@@ -10,8 +10,11 @@ Finally, use the "Create Presentation" button to finalize the presentation and s
 
 
 Future Work:
+
   -Allow user to select save location
+  
   -Allow user to copy images to clipboard
+  
   -Allow for going through multiple pages of images
 
 
